@@ -1,0 +1,45 @@
+<div class="container-home">
+    <app-nav-bar></app-nav-bar>
+    <div class="content-home">
+        <h1>Lista dos alunos do curso</h1>
+        <div class="filter-form">
+            <div>
+                <label htmlFor="nome">Pesquisar</label>
+                <input 
+                    type="text" 
+                    id="nome" 
+                    placeholder='Nome do aluno'
+                />
+            </div>
+            <div>
+                <label htmlFor="nacionalidade">Nacionalidade</label>
+                <select 
+                    name="nacionalidade" 
+                    id="nacionalidade"
+                >
+                    <option value="">Todas</option>
+                </select>
+            </div>
+        </div>
+        <table class="table-content">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Sexo</th>
+                    <th>Nacionalidade</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Lucas Souza</td>
+                    <td>Masculino</td>
+                    <td>Brasileiro</td>
+                    <td>
+                        <button (click)="openModal()">Visualizar</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
