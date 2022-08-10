@@ -8,8 +8,7 @@
 </p>
 
 <div align="center">
-![Screen Shot 2022-08-10 at 14 27 11](https://user-images.githubusercontent.com/57332512/183978135-6d14a825-b837-4305-9a47-065ce76a020c.png)
-
+<img width="1212" alt="Screen Shot 2022-07-21 at 22 39 08" src="https://user-images.githubusercontent.com/57332512/183978135-6d14a825-b837-4305-9a47-065ce76a020c.png">
  </div>
 
 
