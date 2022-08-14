@@ -22,24 +22,32 @@
             </div>
         </div>
         <table class="table-content">
-            <thead>
-                <tr>
-                    <th>Nome</th>
-                    <th>Sexo</th>
-                    <th>Nacionalidade</th>
-                    <th>Ação</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Lucas Souza</td>
-                    <td>Masculino</td>
-                    <td>Brasileiro</td>
-                    <td>
-                        <button (click)="openModal()">Visualizar</button>
-                    </td>
-                </tr>
-            </tbody>
+            <ng-container *ngIf="!loading && !error">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Sexo</th>
+                        <th>Nacionalidade</th>
+                        <th>Ação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let item of dataUser">
+                        <td>{{item.name.first}} {{item.name.last}}</td>
+                        <td>{{item.gender}}</td>
+                        <td>{{item.nat}}</td>
+                        <td>
+                            <button (click)="openModal()">Visualizar</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </ng-container>
+            <ng-container *ngIf="loading">
+                <p>Carregando ...</p>
+            </ng-container>
+            <ng-container *ngIf="!loading && error">
+                <p>Erro!</p>
+            </ng-container>
         </table>
     </div>
 </div>
