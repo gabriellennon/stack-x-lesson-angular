@@ -6,13 +6,13 @@
     </div>
     <div class="modal-content">
         <div class="image-user">
-            <img src='https://github.com/gabriellennon.png'/>
+            <img [src]="userData.picture.thumbnail" />
         </div>
         <div class="info-user-modal">
-            <p><strong>Nome:</strong> Gabriel Lennon</p>
-            <p><strong>E-mail:</strong>gabriellennon@gmail.com</p>
-            <p><strong>Celular:</strong> 61983215873</p>
-            <p><strong>Idade:</strong> 25</p>
+            <p><strong>Nome:</strong> {{userData.name.first}}</p>
+            <p><strong>E-mail:</strong> {{userData.email}}</p>
+            <p><strong>Celular:</strong> {{userData.cell}}</p>
+            <p><strong>Idade:</strong> {{userData.dob.age}}</p>
         </div>
     </div>
 </div>
